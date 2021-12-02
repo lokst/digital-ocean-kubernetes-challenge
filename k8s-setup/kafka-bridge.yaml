@@ -1,0 +1,10 @@
+# Adapted from https://github.com/strimzi/strimzi-kafka-operator/blob/main/examples/bridge/kafka-bridge.yaml
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaBridge
+metadata:
+  name: my-bridge
+spec:
+  replicas: 1
+  bootstrapServers: my-cluster-kafka-bootstrap:9092
+  http:
+    port: 8080
