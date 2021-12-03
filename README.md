@@ -7,6 +7,7 @@ For my entry, I perform the following and document the steps taken:
 - Install an Apache Kafka cluster on the Kubernetes cluster, using [Strimzi](https://strimzi.io/)
 - Install Kafka Bridge on the Kubernetes cluster using Strimzi, to provide a HTTP interface to the Kafka cluster
 - Demonstrate producing and consuming messages through the HTTP interface provided by Kafka Bridge
+- Create a demo application to demonstrate using Kafka Bridge to produce and consume messages
 
 ## Steps
 
@@ -172,3 +173,9 @@ Received response:
 ```
 [{"topic":"my-bridge-topic","key":null,"value":"another test message","partition":2,"offset":3},{"topic":"my-bridge-topic","key":"my-key","value":"test message","partition":0,"offset":2},{"topic":"my-bridge-topic","key":null,"value":"hello kafka","partition":1,"offset":1}]
 ```
+
+### Demo Application
+
+![demo-app](demo.png)
+
+See instructions [here](demo-app/README.md) on how to run the demo application.
